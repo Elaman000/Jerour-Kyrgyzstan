@@ -1,0 +1,40 @@
+.border-events{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.border-events .card{
+    width: 400px;
+    height: auto;
+    margin: 10px 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.51);
+}
+.border-events .card div{
+    margin: 15px;
+}
+.border-events .card img{
+    width: 100%;
+}
+
+.border-events .card h5{
+    font-weight: 800;
+}
+.border-events .card svg{
+    color: #EA0303;
+    margin: 5px;
+}
+.border-events .card p{
+    color: rgba(0, 0, 0, 0.71);
+    font-weight: 400;
+}
+.border-events .card button{
+    background-color: #EA0303;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+}

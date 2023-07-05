@@ -1,0 +1,1083 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+@media screen and (min-width: 0px) and (max-width: 450px){
+
+    .blok-activCar{
+        width: 100%;
+        height: 100vh;
+        position: revert;
+        padding: 80px 5% 0 5%;
+        color: #E2E2E2;
+        z-index: 1;
+    }
+    .color-activCar{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 60%;
+        right: 2%;
+        transform: translate(-50%,-50%);
+        z-index: 5;
+    }
+    .color-activCar div{
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+        margin: 10px 0 20px 0;
+        background-color: orange;
+        border-radius: 50%;
+    }
+    .text-jetour-activ{
+        position: fixed;
+        top: 35%;
+        transform: translateY(-50%);
+        width: 90vw;
+        z-index: 2;
+    }
+    .text-jetour-activ img{
+        width: 100%;
+        opacity: 0.3;
+    }
+
+    .activ-info-car{
+        position: absolute;
+        width: 100vw;
+        height: 30vh;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        z-index: 3;
+    }
+    .activ-info-car div{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: flex-end;
+        color: white;
+        padding: 20px 5px;
+        font-family: 'Jura', sans-serif;
+    }
+
+    .car-img-activ{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 60%;
+        left: 50%;
+        z-index: 4;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .car-img-activ img{
+        width: 150%;
+        height: auto;
+    }
+    .big-text{
+        font-size: 10vw;
+
+    }
+    .pot-text{
+        font-size: 15px;
+        margin-top: -20px;
+    }
+    .activ-text-car{
+        position: absolute;
+        top: 10%;
+        z-index: 5;
+        color: white;
+        width: 90%;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.76);
+    }
+    .name-car-activ{
+        font-family: 'Bruno Ace SC', cursive;
+        font-size: 50px;
+    }
+    .pot-text-carName{
+        font-size: 12px;
+        letter-spacing: 0.8px;
+        font-family: 'Jura', sans-serif;
+
+    }
+    .activ-booton-info-jetour{
+        display: inline-block;
+        padding: 0.4rem 0.8em;
+        border: 0.5px solid white;
+        border-radius: 1em;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: rgba(5, 5, 10, 0.15);
+        transition: 1s;
+        cursor: pointer;
+        font-size: 3.5vw;
+    }
+    .activ-booton-info-jetour:hover{
+        background-color: #EA0303;
+    }
+
+    .section1-activCar{
+        display: grid;
+        height: auto;
+        overflow: hidden;
+
+    }
+    .section1-activCar .activ-img2{
+        display: none;
+    }
+    .section1-activCar div{
+        width: 100%;
+        height: auto;
+        position: revert;
+        z-index: 3;
+        color: white;
+    }
+    .section1-activCar .text {
+        padding: 5%;
+    }
+    .section1-activCar .text p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    }
+    .section1-activCar .img-section1{
+        width: 100%;
+        height: auto;
+    }
+
+    .slider-activCar{
+        position: relative;
+        z-index: 4;
+    }
+    .config-img-car{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+    }
+    .config-img-car img{
+        width: 100%;
+    }
+    .border-text-config{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 10px black;
+    }
+    .border-text-config h1{
+        font-family: 'Red Hat Text', sans-serif;
+        font-weight: 600;
+    }
+    .border-text-config p{
+        font-family: 'Jura';
+        font-style: normal;
+        font-size: 2.4vw;
+        letter-spacing:0.1em;
+    }
+    .booton-config{
+        border: 1px solid white;
+        width: auto;
+        padding: 0.4em 0.8em;
+        display: inline-block;
+        border-radius: 1em;
+        cursor: pointer;
+        transition: 1s;
+        font-size: 3vw;
+    }
+    .booton-config:hover{
+        background-color: #EA0303;
+    }
+
+    .bottom-activ-syte{
+        width: auto;
+        height: 100px;
+        background-color: #222732;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .bottom-activ-syte img{
+        width: auto;
+        height: 50px;
+    }
+    .peculiarities{
+        position: relative;
+        z-index: 2;
+        padding: 50px 5%;
+        background-color: #EFF3FA;
+    }
+
+    .blok-peculiarities{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .block-li{
+        width: auto;
+        height: auto;
+        margin: 10px 30px;
+    }
+    .peculiarities li{
+        color: #EA0303;
+        font-size: 20px;
+    }
+    .peculiarities span{
+        color: black;
+    }
+    .peculiarities h1{
+        color: black;
+        font-family: 'Russo One', sans-serif;
+        font-weight: 800;
+        font-size: 5vw;
+        margin-bottom: 30px;
+    }
+    .pris-list {
+        background-color: white;
+    }
+    .pris-list img{
+        width: 150px;
+        height: auto;
+    }
+    .pris-list span{
+        font-size: 30px;
+    }
+    .border-card-car{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .card-car-model{
+        display: inline-block;
+        width: 250px;
+        height: 305px;
+        background-color: #222732;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        margin: 15px 20px;
+    }
+    .card-car-model:hover .block-card{
+        bottom: -50%;
+        transition: 1s;
+    }
+    .block-card{
+        background-color: #222732;
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        bottom: 0%;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .card-car-model h2{
+        position: absolute;
+        bottom: 8.5%;
+        left: 5%;
+        color: white;
+        z-index: 3;
+        transition: 1s;
+        text-shadow: 0 0 10px black;
+    }
+    .card-car-model span{
+        position: absolute;
+        bottom: 8.5%;
+        right: 5%;
+        color: white;
+        font-size: 18px;
+        z-index: 3;
+        transition: 1s;
+        background-color: #EA0303;
+        padding: 2px 4px;
+        border-radius: 5px;
+    }
+    .card-car-model p{
+        transition: 1s;
+        position: absolute;
+        bottom: -1%;
+        left: 5%;
+        color: white;
+        z-index: 3;
+        font-weight: 800;
+    }
+    .card-car-model .inStock{
+        position: absolute;
+        z-index: 3;
+        background-color: #EA0303;
+        color: white;
+        font-weight: 600;
+        width: 200px;
+        height: auto;
+        padding: 2px;
+        text-align: center;
+        top: 7%;
+        left: 45%;
+        transform: rotate(40deg);
+    }
+    .card-car-model:hover h2{
+        transition: 1s;
+    }
+    .card-car-model .img-card{
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%,-50%);
+        transition: 1s;
+    }
+    .pris-list .img-card-hover{
+        position: absolute;
+        width: 850px;
+        z-index: 2;
+        top: 45%;
+        left: 250%;
+        transform: translate(-50%,-50%);
+        transition: 1s;
+    }
+
+    .card-car-model:hover .img-card{
+        transition: 1s;
+        opacity: 0;
+    }
+    .card-car-model:hover .img-card-hover{
+        transition: 1s;
+        left: 80%;
+    }
+    .pris-list .bottom-text-activCar{
+        margin-top:50px ;
+        align-items: center;
+        font-family: 'Jura', sans-serif;
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px){
+
+    .blok-activCar{
+        width: 100%;
+        height: 100vh;
+        position: revert;
+        padding: 80px 5% 0 5%;
+        color: #E2E2E2;
+        z-index: 1;
+    }
+    .color-activCar{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 60%;
+        right: 2%;
+        transform: translate(-50%,-50%);
+        z-index: 5;
+    }
+    .color-activCar div{
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+        margin: 10px 0 20px 0;
+        background-color: orange;
+        border-radius: 50%;
+    }
+    .text-jetour-activ{
+        position: fixed;
+        top: 35%;
+        transform: translateY(-50%);
+        width: 90vw;
+        z-index: 2;
+    }
+    .text-jetour-activ img{
+        width: 100%;
+        opacity: 0.3;
+    }
+
+    .activ-info-car{
+        position: absolute;
+        width: 100vw;
+        height: 30vh;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        z-index: 3;
+    }
+    .activ-info-car div{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: flex-end;
+        color: white;
+        padding: 20px 5px;
+        font-family: 'Jura', sans-serif;
+    }
+
+    .car-img-activ{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 60%;
+        left: 50%;
+        z-index: 4;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .car-img-activ img{
+        width: 150%;
+        height: auto;
+    }
+    .big-text{
+        font-size: 10vw;
+
+    }
+    .pot-text{
+        font-size: 15px;
+        margin-top: -20px;
+    }
+    .activ-text-car{
+        position: absolute;
+        top: 10%;
+        z-index: 5;
+        color: white;
+        width: 90%;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.76);
+    }
+    .name-car-activ{
+        font-family: 'Bruno Ace SC', cursive;
+        font-size: 50px;
+    }
+    .pot-text-carName{
+        font-size: 12px;
+        letter-spacing: 0.8px;
+        font-family: 'Jura', sans-serif;
+
+    }
+    .activ-booton-info-jetour{
+        display: inline-block;
+        padding: 0.4rem 0.8em;
+        border: 0.5px solid white;
+        border-radius: 1em;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: rgba(5, 5, 10, 0.15);
+        transition: 1s;
+        cursor: pointer;
+        font-size: 3.5vw;
+    }
+    .activ-booton-info-jetour:hover{
+        background-color: #EA0303;
+    }
+
+    .section1-activCar{
+        display: grid;
+        height: auto;
+        overflow: hidden;
+    }
+    .section1-activCar .activ-img2{
+        display: none;
+    }
+    .section1-activCar div{
+        width: 100%;
+        height: auto;
+        position: revert;
+        z-index: 3;
+        color: white;
+    }
+    .section1-activCar .text {
+        padding: 5%;
+    }
+    .section1-activCar .text p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    }
+    .section1-activCar .img-section1{
+        width: 100%;
+        height: auto;
+    }
+
+    .slider-activCar{
+        position: relative;
+        z-index: 4;
+    }
+    .config-img-car{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+    }
+    .config-img-car img{
+        width: 100%;
+    }
+    .border-text-config{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 10px black;
+    }
+    .border-text-config h1{
+        font-family: 'Red Hat Text', sans-serif;
+        font-weight: 600;
+    }
+    .border-text-config p{
+        font-family: 'Jura';
+        font-style: normal;
+        font-size: 2.4vw;
+        letter-spacing:0.1em;
+    }
+    .booton-config{
+        border: 1px solid white;
+        width: auto;
+        padding: 0.4em 0.8em;
+        display: inline-block;
+        border-radius: 1em;
+        cursor: pointer;
+        transition: 1s;
+        font-size: 3vw;
+    }
+    .booton-config:hover{
+        background-color: #EA0303;
+    }
+
+    .bottom-activ-syte{
+        width: auto;
+        height: 100px;
+        background-color: #222732;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .bottom-activ-syte img{
+        width: auto;
+        height: 50px;
+    }
+    .peculiarities{
+        position: relative;
+        z-index: 2;
+        padding: 50px 5%;
+        background-color: #EFF3FA;
+    }
+
+    .blok-peculiarities{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .block-li{
+        width: auto;
+        height: auto;
+        margin: 10px 30px;
+    }
+    .peculiarities li{
+        color: #EA0303;
+        font-size: 20px;
+    }
+    .peculiarities span{
+        color: black;
+    }
+    .peculiarities h1{
+        color: black;
+        font-family: 'Russo One', sans-serif;
+        font-weight: 800;
+        font-size: 5vw;
+        margin-bottom: 30px;
+    }
+    .pris-list {
+        background-color: white;
+    }
+    .pris-list img{
+        width: 150px;
+        height: auto;
+    }
+    .pris-list span{
+        font-size: 30px;
+    }
+    .border-card-car{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .card-car-model{
+        display: inline-block;
+        width: 250px;
+        height: 305px;
+        background-color: #222732;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        margin: 15px 20px;
+    }
+    .card-car-model:hover .block-card{
+        bottom: -50%;
+        transition: 1s;
+    }
+    .block-card{
+        background-color: #222732;
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        bottom: 0%;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .card-car-model h2{
+        position: absolute;
+        bottom: 8.5%;
+        left: 5%;
+        color: white;
+        z-index: 3;
+        transition: 1s;
+        text-shadow: 0 0 10px black;
+    }
+    .card-car-model span{
+        position: absolute;
+        bottom: 8.5%;
+        right: 5%;
+        color: white;
+        font-size: 18px;
+        z-index: 3;
+        transition: 1s;
+        background-color: #EA0303;
+        padding: 2px 4px;
+        border-radius: 5px;
+    }
+    .card-car-model p{
+        transition: 1s;
+        position: absolute;
+        bottom: -1%;
+        left: 5%;
+        color: white;
+        z-index: 3;
+        font-weight: 800;
+    }
+    .card-car-model .inStock{
+        position: absolute;
+        z-index: 3;
+        background-color: #EA0303;
+        color: white;
+        font-weight: 600;
+        width: 200px;
+        height: auto;
+        padding: 2px;
+        text-align: center;
+        top: 7%;
+        left: 45%;
+        transform: rotate(40deg);
+    }
+    .card-car-model:hover h2{
+        transition: 1s;
+    }
+    .card-car-model .img-card{
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%,-50%);
+        transition: 1s;
+    }
+    .pris-list .img-card-hover{
+        position: absolute;
+        width: 850px;
+        z-index: 2;
+        top: 45%;
+        left: 250%;
+        transform: translate(-50%,-50%);
+        transition: 1s;
+    }
+
+    .card-car-model:hover .img-card{
+        transition: 1s;
+        opacity: 0;
+    }
+    .card-car-model:hover .img-card-hover{
+        transition: 1s;
+        left: 80%;
+    }
+    .pris-list .bottom-text-activCar{
+        margin-top:50px ;
+        align-items: center;
+        font-family: 'Jura', sans-serif;
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 9999999999999px){
+    .blok-activCar{
+        width: 100%;
+        height: 100vh;
+        position: revert;
+        padding: 80px 5% 0 5%;
+        color: #E2E2E2;
+        z-index: 1;
+    }
+    .color-activCar{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        transform: translate(-50%,-50%);
+        z-index: 5;
+    }
+    .color-activCar div{
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+        margin: 10px 0 20px 0;
+        background-color: orange;
+        border-radius: 50%;
+    }
+    .text-jetour-activ{
+        position: fixed;
+        top: 30%;
+        transform: translateY(-50%);
+        width: 90vw;
+        z-index: 2;
+    }
+    .text-jetour-activ img{
+        width: 100%;
+        opacity: 0.3;
+    }
+
+    .activ-info-car{
+        position: absolute;
+        width: 100vw;
+        height: 350px;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        z-index: 3;
+    }
+    .activ-info-car div{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: flex-end;
+        color: white;
+        padding: 0 0 20px 0;
+        font-family: 'Jura', sans-serif;
+    }
+
+    .car-img-activ{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        z-index: 4;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .car-img-activ img{
+        width: 150%;
+        height: auto;
+    }
+    .big-text{
+        font-size: 10vw;
+
+    }
+    .pot-text{
+        font-size: 2vw;
+        margin-top: -20px;
+    }
+    .activ-text-car{
+        position: absolute;
+        top: 15%;
+        z-index: 5;
+        color: white;
+        width: 40%;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.76);
+    }
+    .name-car-activ{
+        font-family: 'Bruno Ace SC', cursive;
+        font-size: 50px;
+    }
+    .pot-text-carName{
+        font-family: 'Jura', sans-serif;
+
+    }
+    .activ-booton-info-jetour{
+        display: inline-block;
+        padding: 10px 30px;
+        border: 1px solid white;
+        border-radius: 25px;
+        text-transform: uppercase;
+        font-weight: 800;
+        background-color: rgba(5, 5, 10, 0.15);
+        transition: 1s;
+        cursor: pointer;
+    }
+    .activ-booton-info-jetour:hover{
+        background-color: #EA0303;
+    }
+
+    .section1-activCar{
+        display: flex;
+        height: auto;
+        overflow: hidden;
+
+    }
+    .section1-activCar .activ-img1{
+        display: none;
+    }
+    .section1-activCar div{
+        width: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: revert;
+        z-index: 3;
+        color: white;
+    }
+    .section1-activCar .text{
+        padding: 0 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1-activCar .text p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.2vw;
+    }
+    .section1-activCar .img-section1{
+        width: 100%;
+        height: auto;
+    }
+
+    .slider-activCar{
+        position: relative;
+        z-index: 4;
+    }
+    .config-img-car{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+    }
+    .config-img-car img{
+        width: 100%;
+    }
+    .border-text-config{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 10px black;
+    }
+    .border-text-config h1{
+        font-family: 'Red Hat Text', sans-serif;
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .border-text-config p{
+        font-family: 'Jura';
+        font-style: normal;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .booton-config{
+        border: 1px solid white;
+        width: auto;
+        padding: 10px 20px;
+        display: inline-block;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .booton-config:hover{
+        background-color: #EA0303;
+    }
+
+    .bottom-activ-syte{
+        width: auto;
+        height: 100px;
+        background-color: #222732;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .bottom-activ-syte img{
+        width: auto;
+        height: 50px;
+    }
+    .peculiarities{
+        position: relative;
+        z-index: 2;
+        padding: 50px 5%;
+        background-color: #EFF3FA;
+    }
+    .blok-peculiarities{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .block-li{
+        width: 20%;
+        height: auto;
+        margin: 10px 30px;
+    }
+    .peculiarities li{
+        color: #EA0303;
+        font-size: 20px;
+    }
+    .peculiarities span{
+        color: black;
+    }
+    .peculiarities h1{
+        color: black;
+        font-family: 'Russo One', sans-serif;
+        font-weight: 800;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .pris-list {
+        background-color: white;
+    }
+    .pris-list img{
+        width: 150px;
+        height: auto;
+    }
+    .pris-list span{
+        font-size: 30px;
+    }
+    .border-card-car{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .card-car-model{
+        display: inline-block;
+        width: 250px;
+        height: 305px;
+        background-color: #222732;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        margin: 15px 20px;
+    }
+    .card-car-model:hover .block-card{
+        bottom: -50%;
+        transition: 1s;
+    }
+    .block-card{
+        background-color: #222732;
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        bottom: 0%;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .card-car-model h2{
+        position: absolute;
+        bottom: 8.5%;
+        left: 5%;
+        color: white;
+        z-index: 3;
+        transition: 1s;
+        text-shadow: 0 0 10px black;
+    }
+    .card-car-model span{
+        position: absolute;
+        bottom: 8.5%;
+        right: 5%;
+        color: white;
+        font-size: 18px;
+        z-index: 3;
+        transition: 1s;
+        background-color: #EA0303;
+        padding: 2px 4px;
+        border-radius: 5px;
+    }
+    .card-car-model p{
+        transition: 1s;
+        position: absolute;
+        bottom: -1%;
+        left: 5%;
+        color: white;
+        z-index: 3;
+        font-weight: 800;
+    }
+    .card-car-model .inStock{
+        position: absolute;
+        z-index: 3;
+        background-color: #EA0303;
+        color: white;
+        font-weight: 600;
+        width: 200px;
+        height: auto;
+        padding: 2px;
+        text-align: center;
+        top: 7%;
+        left: 45%;
+        transform: rotate(40deg);
+    }
+    .card-car-model:hover h2{
+        transition: 1s;
+    }
+    .card-car-model .img-card{
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%,-50%);
+        transition: 1s;
+    }
+    .pris-list .img-card-hover{
+        position: absolute;
+        width: 850px;
+        z-index: 2;
+        top: 45%;
+        left: 250%;
+        transform: translate(-50%,-50%);
+        transition: 1s;
+    }
+
+    .card-car-model:hover .img-card{
+        transition: 1s;
+        opacity: 0;
+    }
+    .card-car-model:hover .img-card-hover{
+        transition: 1s;
+        left: 80%;
+    }
+    .pris-list .bottom-text-activCar {
+        margin-top: 50px;
+        align-items: center;
+        font-family: 'Jura', sans-serif;
+        font-size: 25px;
+    }
+}
+

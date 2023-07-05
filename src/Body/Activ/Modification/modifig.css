@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+.modification-block h1{
+    margin-left: 5%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 450px){
+    .modification-background-block{
+        background-color: rgba(0, 0, 0, 0.65);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 20;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50% );
+    }
+    .modification-block{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50% );
+        width: 90%;
+        height: 80%;
+        background-color: #ffffff;
+        overflow: auto;
+        border-radius: 0.8em;
+    }
+    .modification-block h1{
+        margin-left: 10%;
+    }
+    .modification-block svg{
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        width: 30px;
+    }
+    .modification-block .block-img1{
+        position: absolute;
+        top: 30%;
+        right: 0px;
+        width: 20vw;
+        height: auto;
+    }
+    .modification-block .block-img2{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 19vw;
+    }
+    .modification-img-block .img-blog{
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: 0 10%;
+        }
+    .modification-img-block .img-blog img{
+        width: 100%;
+    }
+    .modification-img-block .img-blog .vysota{
+        position: absolute;
+        top: 30%;
+        right: 95%;
+        transform: rotate(-90deg);
+    }
+    .modification-img-block .img-blog .dlina{
+        position: absolute;
+        top: 100%;
+        left: 55%;
+        transform: translateX(-50%);
+    }
+    .text-modification-info{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .text-modification-info div{
+        width: 40%;
+        height: auto;
+        margin: 5px;
+        border: 1px solid;
+       padding-top: 5px;
+        font-family: 'Comfortaa', cursive;
+    }
+    .text-modification-info div h2{
+        color: #EA0303;
+        font-weight: 800;
+    }
+    .wheels-block{
+        margin-top: 5vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .wheels-block div{
+        width: 150px;
+        height: 250px;
+        background-color: #222732;
+        border-radius: 10px;
+        position: relative;
+    }
+    .wheels-block div img{
+        position: absolute;
+        width: 300px;
+        top: 50%;
+        left: 63px;
+        transform: translate(-50%,-50%);
+        z-index: 4;
+    }
+    .wheels-block h1{
+        position: relative;
+        z-index: 5;
+        font-weight: 900;
+        font-family: 'Russo One', sans-serif;
+        text-shadow:  8px 5px 8px black;
+        color: #EA0303;
+    }
+    .info-activCar-modification-block{
+        margin-top: 5vh;
+        width: 90%;
+        height: auto;
+        position: relative;
+        margin-left: 5%;
+    }
+    .info-activCar-modification-block img{
+        display: none;
+    }
+
+    .info-activCar-modification-block .text-information-car div, .info-activCar-modification-block .text-information-car2 div{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid;
+    }
+    .info-activCar-modification-block .text-information-car div h5, .info-activCar-modification-block .text-information-car2 div h5{
+        color: #EA0303;
+        font-weight: 800;
+    }
+
+    .info-activCar-modification-block .text-information-car2 h4{
+        margin-top: 5vh;
+    }
+
+    .bottom-activ-syte-modification{
+        width: 100%;
+        height: 100px;
+        background-color: #62647D;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        overflow: auto;
+    }
+    .bottom-activ-syte-modification div{
+        width: 200px;
+        height: 50px;
+        -webkit-transform: skew(-25deg);
+        -moz-transform: skew(20deg);
+        -o-transform: skew(20deg);
+        background: #cc0303;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer ;
+        margin-left: 20px;
+        padding: 0.5em 0.8em;
+    }
+    .bottom-activ-syte-modification h2{
+        color: white;
+        text-shadow: 4px 4px 6px black;
+        -webkit-transform: skew(25deg);
+    }
+
+}
+
+
+
+@media screen and (min-width: 450px) and (max-width: 1000px){
+    .modification-background-block{
+        background-color: rgba(0, 0, 0, 0.65);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 20;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50% );
+    }
+    .modification-block{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50% );
+        width: 90%;
+        height: 80%;
+        background-color: #ffffff;
+        overflow: auto;
+        border-radius: 0.8em;
+    }
+    .modification-block h1{
+        margin-left: 10%;
+    }
+    .modification-block svg{
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        width: 30px;
+    }
+    .modification-block .block-img1{
+        position: absolute;
+        top: 30%;
+        right: 0px;
+        width: 20vw;
+        height: auto;
+    }
+    .modification-block .block-img2{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 19vw;
+    }
+    .modification-img-block .img-blog{
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: 0 10%;
+    }
+    .modification-img-block .img-blog img{
+        width: 100%;
+    }
+    .modification-img-block .img-blog .vysota{
+        position: absolute;
+        top: 30%;
+        right: 95%;
+        transform: rotate(-90deg);
+    }
+    .modification-img-block .img-blog .dlina{
+        position: absolute;
+        top: 100%;
+        left: 55%;
+        transform: translateX(-50%);
+    }
+    .text-modification-info{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .text-modification-info div{
+        width: 40%;
+        height: auto;
+        margin: 5px;
+        border: 1px solid;
+        padding-top: 5px;
+        font-family: 'Comfortaa', cursive;
+    }
+    .text-modification-info div h2{
+        color: #EA0303;
+        font-weight: 800;
+    }
+    .wheels-block{
+        margin-top: 5vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .wheels-block div{
+        width: 150px;
+        height: 250px;
+        background-color: #222732;
+        border-radius: 10px;
+        position: relative;
+    }
+    .wheels-block div img{
+        position: absolute;
+        width: 300px;
+        top: 50%;
+        left: 63px;
+        transform: translate(-50%,-50%);
+        z-index: 4;
+    }
+    .wheels-block h1{
+        position: relative;
+        z-index: 5;
+        font-weight: 900;
+        font-family: 'Russo One', sans-serif;
+        text-shadow:  8px 5px 8px black;
+        color: #EA0303;
+    }
+    .info-activCar-modification-block{
+        margin-top: 5vh;
+        width: 90%;
+        height: auto;
+        position: relative;
+        margin-left: 5%;
+    }
+    .info-activCar-modification-block img{
+        display: none;
+    }
+
+    .info-activCar-modification-block .text-information-car div, .info-activCar-modification-block .text-information-car2 div{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.44);
+        margin-top: 5px;
+    }
+    .info-activCar-modification-block .text-information-car div h5, .info-activCar-modification-block .text-information-car2 div h5{
+        color: #EA0303;
+        font-weight: 800;
+    }
+
+    .info-activCar-modification-block .text-information-car2 h4{
+        margin-top: 5vh;
+    }
+    .bottom-activ-syte-modification{
+        width: 100%;
+        height: 100px;
+        background-color: #62647D;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        overflow: auto;
+    }
+    .bottom-activ-syte-modification div{
+        width: 200px;
+        height: 50px;
+        -webkit-transform: skew(-25deg);
+        -moz-transform: skew(20deg);
+        -o-transform: skew(20deg);
+        background: #cc0303;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+    .bottom-activ-syte-modification h2{
+        color: white;
+        text-shadow: 4px 4px 6px black;
+        -webkit-transform: skew(25deg);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 9999999999990px){
+    .modification-background-block{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.61);
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .modification-background-block .modification-block{
+        position: relative;
+        width: 80%;
+        height: 85%;
+        background-color: #ffffff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 10px;
+        overflow: auto;
+    }
+
+    .modification-block .block-img1{
+        position: absolute;
+        top: 10%;
+        right: 0%;
+        width: 130px;
+    }
+    .modification-block .block-img2{
+        position: absolute;
+        top: 70%;
+        left: 0%;
+        width: 130px;
+    }
+
+    .modification-block .icon-x{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        font-weight: 900;
+    }
+    .block-modification-content{
+        margin: 0 5%;
+    }
+
+    .block-modification-content .modification-img-block{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        height: 28vh;
+    }
+
+    .block-modification-content .modification-img-block .img-blog, .text-modification-info {
+        width: 50%;
+        position: relative;
+        color: black;
+        z-index: 10;
+    }
+    .block-modification-content .text-modification-info {
+        padding: 0 10%;
+    }
+    .modification-img-block .img-blog img{
+        width: 100%;
+        position: absolute;
+    }
+    .modification-img-block .img-blog .span{
+        position: absolute;
+        left: 54%;
+        transform: translate(-50%,-50%);
+        font-size: 25px;
+        font-weight: 600;
+        bottom: -25px;
+    }
+    .modification-img-block .img-blog .p{
+        position: absolute;
+        top: 35%;
+        left: -35px;
+        font-size: 25px;
+        transform: translate(-50%,-50%);
+        font-weight: 600;
+    }
+    .text-modification-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .text-modification-info div{
+        width: 50%;
+        height: auto;
+    }
+    .text-modification-info p{
+        margin-top: -10px;
+        font-size: 30px;
+        font-family: 'Jura', sans-serif;
+        font-weight: 900;
+    }
+    .modification-block .wheels-block{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 5% 0;
+    }
+    .modification-block .wheels-block h1{
+        font-size: 100px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        color: #62647D;
+    }
+    .modification-block .wheels-block div{
+        width: 275px;
+        height: auto;
+        background-color: #62647D;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+    }
+    .info-activCar-modification-block{
+        position: relative;
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 15px black;
+        display: flex;
+        padding: 3% 5%;
+
+    }
+    .info-activCar-modification-block img{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .info-activCar-modification-block div{
+        position: relative;
+        z-index: 2;
+        width: 50%;
+    }
+    .info-activCar-modification-block p,.info-activCar-modification-block span{
+        font-size: 20px;
+        text-shadow: 0 0 10px white;
+        font-family: 'Comfortaa', cursive;
+    }
+
+    .info-activCar-modification-block span{
+        font-weight: 800;
+    }
+
+    .bottom-activ-syte-modification{
+        width: 100%;
+        height: 100px;
+        background-color: #62647D;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow: auto;
+    }
+    .bottom-activ-syte-modification div{
+        width: 200px;
+        height: 50px;
+        -webkit-transform: skew(-25deg);
+        -moz-transform: skew(20deg);
+        -o-transform: skew(20deg);
+        background: #cc0303;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer ;
+        margin-left: 15px;
+    }
+    .bottom-activ-syte-modification h2{
+        color: white;
+        text-shadow: 4px 4px 6px black;
+        -webkit-transform: skew(25deg);
+    }
+}
+

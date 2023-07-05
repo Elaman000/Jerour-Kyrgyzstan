@@ -1,0 +1,60 @@
+
+.border-padval{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    background-color: #222732;
+    padding: 50px 10% 20px 10%;
+}
+.content-podval{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.66);
+}
+.content-podval div{
+    width: 300px ;
+    height: auto;
+    padding: 10px 15px;
+    margin-top: 10px;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+}
+.podval-logo{
+    width: 100%;
+}
+.padval-section4{
+    text-align: right;
+}
+
+.copyright-text span{
+    display: grid;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+.razdel-padval li{
+    margin-top: 10px;
+    color: #EA0303;
+}
+.razmer{
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+
+}
+.text-nomber{
+    font-family: 'Russo One', sans-serif;
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+.padval-section4 svg{
+    color: white;
+}

@@ -1,0 +1,110 @@
+.main-border{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.main-video-background{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#222732;
+    z-index: -1;
+    overflow: hidden;
+}
+.main-video-background video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-text-senter{
+    position: absolute;
+    z-index: 1;
+}
+.main-img-logo-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-img-logo-center img{
+    width: 45vw;
+    height: auto;
+}
+.main-img-logo-center span{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Jura', sans-serif;
+    font-style: normal;
+    font-size: 3.4vw;
+    font-weight: 700;
+}
+.main-info-text-bottom{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px){
+
+    .main-info-text-bottom .text-main{
+        color: white;
+        font-family: 'Jura', sans-serif;
+        font-weight: 500;
+        font-size: 3.4vw;
+        line-height: 0.4em;
+    }
+    .main-info-text-bottom .Learn-more-button{
+        background-color: rgba(255, 255, 255, 0.16);
+        font-family: 'Jura', sans-serif;
+        font-size: 3.4vw;
+        border-radius: 0.6em;
+        color: #CCCCCC;
+        padding: 0.2em 0.5em;
+        text-transform: uppercase;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){
+
+    .main-info-text-bottom .text-main{
+        color: white;
+        font-family: 'Jura', sans-serif;
+        font-weight: 500;
+        font-size: 2.5vw;
+        line-height: 0.4em;
+    }
+    .main-info-text-bottom .Learn-more-button{
+        background-color: rgba(255, 255, 255, 0.16);
+        font-family: 'Jura', sans-serif;
+        font-size: 2vw;
+        border-radius: 0.3em;
+        color: #CCCCCC;
+        padding: 0.2em 0.5em;
+        text-transform: uppercase;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width:99999999999px){
+
+    .main-info-text-bottom .text-main{
+        color: white;
+        font-family: 'Jura', sans-serif;
+        font-weight: 500;
+        font-size: 2vw;
+        line-height: 0.4em;
+    }
+    .main-info-text-bottom .Learn-more-button{
+        background-color: rgba(255, 255, 255, 0.16);
+        font-family: 'Jura', sans-serif;
+        font-size: 25px;
+        border-radius: 25px;
+        color: #CCCCCC;
+        padding: 8px 30px;
+        text-transform: uppercase;
+    }
+}

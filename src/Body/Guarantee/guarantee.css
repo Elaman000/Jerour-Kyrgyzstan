@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+body{
+    font-family: 'Red Hat Text', sans-serif;
+}
+.container-about-the-brand{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+    background-image: url(https://lh3.googleusercontent.com/fife/APg5EOZ-CFqnmBAUJDVR8eQiD-JkE8ED3O67etus7fcC9DBw1kZY4Hqa8Z5Djn5GbPwRSQQjG5oBXYOogBaWX1NbsIZZ-TWNGQeuzYnofrzHzi2zfym6ap7yk8hmARjRdIVIPnRUMXr6UXE_BJshTvN-SZo0FlN_0riOmAZFVFgoJrnRyYvDnIQRcaUGlDVjkEpFxltkYCBtpLQlcZ1teXCxN1IaSY-uR_FK1LA01Ji4wpN1FTSKX9Zngv_LUG2Rl3JJuyGKgU4_038bSxvcrDY3cZ_tKQKPEJrfky9K-rUOU8RHZ4I1tAuBpoiYDO9fXXZUxaCf0jMjb2ySJa2Vldi_aL6ltUh-6LvPUaVx4xW1AjqousXfWiYrRL3CLzgWdtFIYBAPDed6P6cl7GKJPFIGEuaDADYtpz8d7YIVJ6zYt9lyL15FVNTzzI9VO7JIM6LjoP8_j9Zmps099mfIzVs8Wp9FSjZuBv7OMyDzTWRtEmH31PjH0pe4RYDeydgOKUuQcQpLmpk1ww6_xQzJGGQIr-3z-0JD7XrqIwQSjKYzb8l8mI0sSNq9RWLowR7ViwYMcG2q34qPeU6idIaUzEsDJQMXYkjlZpiePhVcvbGxcO0kZV_8enp-92XoMYGBUynK98Q9DiywDUz2Sr1gQNyLMCcxTEwBASXkqx5kxlA4AfoSGv9sBoVHptzpZkBpSNZZxv3r2-vwS9HFQ4IN6OiKkIRPmaUyRxggaSCqcgamdLgXKrJfx6-8pfZ4S2fzIiLUKBARVEK7hqY7ws0lfa7FgmcraBpHIC_1EK66S-qagUhp7dzO9HpI73wk5mJb5DuPgD7rDiElzEzsgPCyU6u-eRrmKwmAW-LKCpDTmPJH0JdGD2Wepa0UHBt6VfNHcU0S-4TWIjU1W6s4vlVGmkmu8xeSOzFJGFaBx526r7N_7FrVH918IT2QUQSwSrlXnzoDl_mtfZirJuopgiby5D_B5AWd1N7xFbssoH1F52fk0TFrlFrlwfpBB6_q8KiojY3KZ_Axr6NGf7r_lLuf_r3JDeATIKTk2qoP-1-NtBviMMGUTUOw6qSxN3cHukUkwcI-oE2hlqxh9vVZOn1eouh9YiD7DKpgCCi2A1BEJbdbsj-LoEr1cJgj-IFQL-CmuI5YQwT8eZInLa_MAweZe_gQ4jUY3tXGJhRnjHdli25FZlionI8SwADcKINJ8UDrk0NZYn3cOjzwiPskGUDaq6vZdtU0CsnAN-PcdQ2o7IN2wHm9J_kun5DBKX4HpAA8HD-uMNdPeUzzeQGplRINd4JDvlH6477zwB8RtHk1w93f-MyhhWkOs15ZrGR1WKo-CCa7ZXOjdKfYOCTqlVagqRmqAU-nDQO0n0ssWrBTaEbVl-fCyLi_v-yrmojqXz1y5i0ZUBqTxk4EytGUaMHb-_qVyz1xuYoXanptH-7e2CbkNB_V8XeluZ10gNgZDLCuNVbmlBqExVYU3-5pmOg7hVpm6oW6ajr0FraXfkkZO2-fEcv8aW0GpoAcQuuqyol2F5P7tbMgP7Ros6Evj4uL9kx7hkj1pBFyxmxzQ_85Uj3mziv7mVg=w1999-h1587);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px){
+    .container-about-the-brand p{
+        width: 90vw;
+        color: #eaeaea;
+        font-family: 'Jura';
+        font-style: normal;
+        font-size: 12px;
+    }
+    .boxintex-shadow{
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        display: inline;
+        left: 0;
+        background-image: linear-gradient(-100deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.37));
+    }
+    .booton-info-jetour{
+        margin-top: 30px;
+        padding: 12px 20px;
+        width: 15em;
+        background-color: rgba(255, 255, 255, 0.35);
+        font-family: 'Jura', sans-serif;
+        text-transform: uppercase;
+        color: #dedede;
+        border-radius: 2.5em;
+        font-size: 12px;
+        font-weight: unset;
+        transition: 1s;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px){
+    .container-about-the-brand p{
+        width: 90vw;
+        color: #eaeaea;
+        font-family: 'Jura';
+        font-style: normal;
+        font-size: 16px;
+    }
+    .boxintex-shadow{
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        display: inline;
+        left: 0;
+        background-image: linear-gradient(-100deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.37));
+    }
+    .booton-info-jetour{
+        margin-top: 30px;
+        padding: 12px 20px;
+        width: 14em;
+        background-color: rgba(255, 255, 255, 0.35);
+        font-family: 'Jura', sans-serif;
+        text-transform: uppercase;
+        color: #dedede;
+        border-radius: 2.5em;
+        font-size: 2vw ;
+        font-weight: unset;
+        transition: 1s;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    .container-about-the-brand p{
+        width: 70vw;
+        color: #eaeaea;
+        font-family: 'Jura';
+        font-style: normal;
+        font-size: 18px;
+    }
+    .boxintex-shadow{
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        display: inline;
+        left: 0;
+        background-image: linear-gradient(-100deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    }
+    .booton-info-jetour{
+        margin-top: 30px;
+        padding: 12px 20px;
+        width: 13em;
+        background-color: rgba(255, 255, 255, 0.35);
+        font-family: 'Jura', sans-serif;
+        text-transform: uppercase;
+        color: #dedede;
+        border-radius: 2.5em;
+        font-size: 2vw ;
+        font-weight: unset;
+        transition: 1s;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 999999999999px){
+    .container-about-the-brand p{
+        width: 50vw;
+        color: #eaeaea;
+        font-family: 'Jura';
+        font-style: normal;
+        font-size: 20px;
+    }
+    .boxintex-shadow{
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        display: inline;
+        left: 0;
+        background-image: linear-gradient(-100deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.36));
+    }
+    .booton-info-jetour{
+        margin-top: 30px;
+        padding: 12px 20px;
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.35);
+        font-family: 'Jura', sans-serif;
+        text-transform: uppercase;
+        color: #dedede;
+        border-radius: 5em;
+        font-size: 25px;
+        font-weight: unset;
+        transition: 1s;
+    }
+}
+
+.container-about-the-brand .text-jetour ,p{
+    z-index: 3;
+}
+
+.container-about-the-brand h4{
+    margin-bottom: 10px;
+}
+.blank{
+    background-color: #E2E2E2;
+}
+#image-container {
+    height: 100vh; /* Высота контейнера изображений равна высоте видимой области */
+    overflow: hidden; /* Скрытие содержимого, выходящего за пределы контейнера */
+}
+
+#image-container .scrol-img{
+    height: 100%; /* Изображения заполняют контейнер полностью */
+    width: auto; /* Ширина изображений автоматически подстраивается */
+    transition: transform 2s ease; /* Плавный переход при смене изображений */
+}
+
+.booton-info-jetour:hover{
+    background-color: #EA0303;
+    transition: 1s;
+}
+.confidence{
+    margin-left: 5%;
+    font-weight: 800;
+    font-size: 5vw;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    color: rgba(176,176,176,0.7);
+}

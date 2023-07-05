@@ -1,0 +1,120 @@
+
+.block-inp h2{
+    margin-bottom: 3vh;
+}
+
+@media screen and (min-width: 0px) and (max-width: 450px){
+    .block-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .block-inp{
+        width: 80%;
+    }
+    .block-img{
+        margin-top: 5vh;
+    }
+    .block-img img{
+        width: 100%;
+    }
+    .block-inp .form-floating{
+        margin-bottom: 1em;
+    }
+    .block-inp button{
+        width: 100%;
+        background-color: #EA0303;
+        border: none;
+    }
+    .block-inp button:hover{
+        background-color: black;
+        color: white;
+    }
+    .block-inp button:active{
+        background-color: black;
+        color: white;
+    }
+    .block-inp-text{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 1000px){
+    .block-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .block-inp,.block-img{
+        width: 80%;
+    }
+    .block-img{
+        margin-top: 5vh;
+    }
+    .block-img img{
+        width: 100%;
+    }
+    .block-inp .form-floating{
+        margin-bottom: 1em;
+    }
+    .block-inp button{
+        width: 100%;
+        background-color: #EA0303;
+        border: none;
+    }
+    .block-inp button:hover{
+        background-color: black;
+        color: white;
+    }
+    .block-inp button:active{
+        background-color: black;
+        color: white;
+    }
+    .block-inp-text{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 9999999999990px){
+    .block-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .block-inp,.block-img{
+        width: 50%;
+    }
+    .block-img img{
+        width: 100%;
+    }
+    .block-img{
+        margin-top: 5vh;
+    }
+    .block-inp .form-floating{
+        margin-bottom: 1em;
+    }
+    .block-inp{
+        padding: 0 2%;
+    }
+    .block-inp button{
+        width: 100%;
+        background-color: #EA0303;
+        border: none;
+    }
+    .block-inp button:hover{
+        background-color: black;
+        color: white;
+    }
+    .block-inp button:active{
+        background-color: black;
+        color: white;
+    }
+    .block-inp-text{
+        display: flex;
+        justify-content: space-between;
+    }
+    .block-inp-text div{
+        width: 32%;
+    }
+}
