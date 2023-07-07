@@ -223,7 +223,6 @@ class Activcar extends Component{
         });
         this.setState({database});
     }
-
     render() {
         const {allCars}=this.props;
         const {database,color,activ,modification}=this.state;
@@ -235,13 +234,10 @@ class Activcar extends Component{
         : color==="black"? {backgroundImage: "linear-gradient(#000000,  #ffffff)"}:null;
         return(
             <>
-
                 {/*Модификатция*/}
                 {modification? <Modification exit={()=>{this.setState({modification:false})}} database={databaseCar}  activ={activCar} />:null}
                 {/*////*/}
-
-
-                <div className={"blok-activCar"} style={{backgroundImage: "linear-gradient(#4B4E61,  #AFB5E2)"}}>
+                <div className={"blok-activCar"} style={{backgroundImage: "linear-gradient(#4B4E61,  #AFB5E2)"}} id={"machine_overview"}>
                     <div className={"activ-text-car"}>
                         <h1 className={"name-car-activ"}>{database === null? null:database.name}</h1>
                         <p className={"pot-text-carName"}>Экономичность и эффективность машины оснащен современными технологиями, которые повышают его экономичность и эффективность. Вы сможете сэкономить на топливе и одновременно уменьшить негативное воздействие на окружающую среду.</p>
@@ -252,18 +248,26 @@ class Activcar extends Component{
                     <div className={"car-img-activ"}>
                         <img src={colorImgCar === undefined ? noCar : colorImgCar }/>
                     </div>
-
-
-
                     <div className={"color-activCar"}>
-                        {database === null?null:database.img.white ? <div style={{backgroundImage: "linear-gradient(#FFFFFF, #949494)"}} onClick={() =>{this.setState({color: "white"})}}></div>: null}
-                        {database === null?null:database.img.red ? <div style={{backgroundImage: "linear-gradient(#FE6363, #600000)"}} onClick={() =>{this.setState({color: "red"})}}></div>: null}
-                        {database === null?null:database.img.blue ? <div style={{backgroundImage: "linear-gradient(#698AFF, #1A276E)"}} onClick={() =>{this.setState({color: "blue"})}}></div>: null}
-                        {database === null?null:database.img.grey ? <div style={{backgroundImage: "linear-gradient(#CFCFCF, #3F3F3F)"}} onClick={() =>{this.setState({color: "grey"})}}></div>: null}
-                        {database === null?null:database.img.purple  ? <div style={{backgroundImage: "linear-gradient(#7B6184, #3D1B49)"}} onClick={() =>{this.setState({color: "purple"})}}></div>: null}
-                        {database === null?null:database.img.black ? <div style={{backgroundImage: "linear-gradient(#555555, #000000)"}} onClick={() =>{this.setState({color: "black"})}}></div>: null}
+                        {database === null?null:database.img.white ? <div style={{backgroundImage: "linear-gradient(#FFFFFF, #949494)"}} onClick={() => {
+    this.setState({color: "white"})
+}}/>: null}
+                        {database === null?null:database.img.red ? <div style={{backgroundImage: "linear-gradient(#FE6363, #600000)"}} onClick={() => {
+    this.setState({color: "red"})
+}}/>: null}
+                        {database === null?null:database.img.blue ? <div style={{backgroundImage: "linear-gradient(#698AFF, #1A276E)"}} onClick={() => {
+    this.setState({color: "blue"})
+}}/>: null}
+                        {database === null?null:database.img.grey ? <div style={{backgroundImage: "linear-gradient(#CFCFCF, #3F3F3F)"}} onClick={() => {
+    this.setState({color: "grey"})
+}}/>: null}
+                        {database === null?null:database.img.purple  ? <div style={{backgroundImage: "linear-gradient(#7B6184, #3D1B49)"}} onClick={() => {
+    this.setState({color: "purple"})
+}}/>: null}
+                        {database === null?null:database.img.black ? <div style={{backgroundImage: "linear-gradient(#555555, #000000)"}} onClick={() => {
+    this.setState({color: "black"})
+}}/>: null}
                     </div>
-
                     <div className={"text-jetour-activ"}>
                         <img src={logo}/>
                     </div>
@@ -277,13 +281,13 @@ class Activcar extends Component{
                         <div style={{backgroundColor:"#24242E"}}>
                             <div>
                                 <h1><span className={"big-text"}>7.4</span>л</h1>
-                                <p className={"pot-text"}>Расхот на 100km</p>
+                                <p className={"pot-text"}>Расход на 100km</p>
                             </div>
                         </div>
                         <div style={{backgroundColor:"#2F313E"}}>
                             <div>
                                 <h1><span className={"big-text"}>1.5</span>л</h1>
-                                <p className={"pot-text"}>Обём двиготеля</p>
+                                <p className={"pot-text"}>Обём двигателя</p>
                             </div>
                         </div>
                     </div>
@@ -336,12 +340,12 @@ class Activcar extends Component{
                         </div>
                         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                                 data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="carousel-control-prev-icon" aria-hidden="true"/>
                             <span className="visually-hidden">Previous</span>
                         </button>
                         <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                                 data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="carousel-control-next-icon" aria-hidden="true"/>
                             <span className="visually-hidden">Next</span>
                         </button>
                     </div>
@@ -356,7 +360,7 @@ class Activcar extends Component{
                 </div>
 
 
-                <div className={"peculiarities"}>
+                <div className={"peculiarities"} id={"peculiarities"}>
                     <h1>Особенности</h1>
                     <div className={"blok-peculiarities"}>{activCar !== undefined?activCar.info.map((item,index) =>{
                         return(
@@ -367,7 +371,7 @@ class Activcar extends Component{
                     }):''}
                     </div>
                 </div>
-                <div className={"peculiarities pris-list"}>
+                <div className={"peculiarities pris-list"} id={"price_list"}>
                     <h1>Прайс-лист и спецификации</h1>
                         <a href={activCar !== undefined?activCar.prisList:''}><img src={pdfImg}/>
                             <span>{activCar !== undefined?activCar.name:''}</span>

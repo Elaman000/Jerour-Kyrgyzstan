@@ -17,7 +17,7 @@ function Main() {
                     <p>Исключительность</p>
                 </div>
                <div className={"Learn-more-button"}>
-                        Узнать подробнее 	&#8594;
+                        Подробнее 	&#8594;
                </div>
             </div>
             <div className={"main-video-background"}>

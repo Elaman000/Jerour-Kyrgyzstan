@@ -8,6 +8,7 @@ import halyk from "../../IMG/Сотрудничество/Halyk bank.png"
 import kampanion from "../../IMG/Сотрудничество/Kompanion bank.png"
 import asia from "../../IMG/Сотрудничество/Asia mol.png"
 import Events from "./Events/events"
+import azorKg from "../../IMG/Сотрудничество/Azor kg.png"
 
 class Guarantee extends Component {
     state={
@@ -16,7 +17,8 @@ class Guarantee extends Component {
             kyrgyzstan,
             halyk,
             kampanion,
-            asia
+            asia,
+            azorKg
 ]
     };
     render() {
@@ -43,12 +45,11 @@ class Guarantee extends Component {
                         <div className={"booton-info-jetour text-jetour"}>Узнать подробнее  &#8594;</div>
                 </div>
                 <br/>
-                <span className={"confidence"} id={"novosti"}>О событиях</span>
+                <h1 className={"text-models-body"} style={{ marginLeft:" 5%"}} id={"news"}>О событиях</h1>
                 <Events database={EventsDatabase} />
                 <br/>
                 <br/>
-
-                <span className={"confidence"}>Нам доверяют</span>
+                <h1 className={"text-models-body"} style={{ marginLeft:" 5%"}} id={"news"}>Нам доверяют</h1>
                 <div className="blank">
                         <InfiniteSlider images={this.state.images} />
                 </div>

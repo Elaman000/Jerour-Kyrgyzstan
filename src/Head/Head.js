@@ -28,11 +28,11 @@ import {Component} from "react";
             window.onscroll = ()=> {
                 this.al()
             };
-            const {activ,onActiv,syte}=this.props;
+            const {activ,onActiv,databaseCars,onclickMain}=this.props;
 
             return(
                 <>
-                    <div className={!this.state.aa? "head-border": ""} id={"heder_syte1"}>
+                    <div className={!this.state.aa? "head-border": ""} id={"heder_syte1"} style={activ === "contact"? {backgroundColor:"#222732"}:null } >
                             <nav className="navbar">
                                 <div className="container-fluid">
                                     <button style={{color: "white"}} className="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -53,10 +53,10 @@ import {Component} from "react";
                                         <div className="offcanvas-body">
                                             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                                 <li className="nav-item">
-                                                    <a className="nav-link active" aria-current="page" href="#">Главный</a>
+                                                    <a className="nav-link active" aria-current="page" onClick={()=>{this.props.onclickMain("main")}}>Главный</a>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="#">Контакты</a>
+                                                    <a className="nav-link">Контакты</a>
                                                 </li>
                                                 <li className="nav-item">
                                                     <a className="nav-link" href="#">Новости</a>
@@ -67,9 +67,11 @@ import {Component} from "react";
                                                         Все модели
                                                     </a>
                                                     <ul className="dropdown-menu">
-                                                        <li><a className="dropdown-item" href="#">X70</a></li>
-                                                        <li><a className="dropdown-item" href="#">X70 plus</a>
-                                                        </li>
+                                                        {databaseCars.map((item,index)=>{
+                                                            return(
+                                                                <li key={index}><a className="dropdown-item" onClick={()=>{this.props.onclockCars(item.car,"activCar")}}>{item.car.name}</a></li>
+                                                            )
+                                                        })}
                                                         <li>
                                                             <hr className="dropdown-divider"/>
                                                         </li>
@@ -91,22 +93,23 @@ import {Component} from "react";
                             <img className={"header-img-logo"} src={imgLogo1} alt="img"/>
                         </div>
                         <div className={"header-sections-menu"}>
-                            <a href={syte === "main" ? "#main_models": "#vsemodeli"}><div style={{color: "white"}}>МОДЕЛИ</div></a>
+                            <a href={activ === "main" || activ ==="contact"  ? "#main_models": "#vsemodeli"}><div style={{color: "white"}}>МОДЕЛИ</div></a>
 
-                            {syte === "main" ?
+                            {activ === "main" || activ ==="contact" ?
                                 <>
-                                <a href={"#obzor"}><div style={{color: "white"}} onClick={()=>{this.props.ObzorCar()}}>ОБЗОР</div></a>
-                                    <a href={"#novosti"}><div style={{color: "white"}}>НОВОСТИ</div></a>
+                                <a href={"#machine_overview"}><div style={{color: "white"}} onClick={()=>{this.props.ObzorCar()}}>ОБЗОР</div></a>
+                                    <a href={"#news"}><div style={{color: "white"}}>НОВОСТИ</div></a>
                                 </>
-                            : syte === "activCar"?
+                            : activ === "activCar"?
                                     <>
-                                        <a href={"#obzor"}><div style={{color: "white"}}>ОСОБЕННОСТИ</div></a>
-                                        <a href={""}><div style={{color: "white"}}>ПРАЙС-ЛИСТ</div></a>
+                                        <a href={"#peculiarities"}><div style={{color: "white"}}>ОСОБЕННОСТИ</div></a>
+                                        <a href={"#price_list"}><div style={{color: "white"}}>ПРАЙС-ЛИСТ</div></a>
                                     </>
                             :null}
 
 
-                            <div style={{color: "white"}}>КОНТАКТЫ</div>
+                            <a style={{cursor:"pointer"}} ><div style={{color: "white"}} onClick={()=>{onclickMain("contact")}}>
+                                КОНТАКТЫ</div></a>
                         </div>
                         <div className={"header-feedback"}>
                             {activ === "main"?
@@ -176,19 +179,20 @@ import {Component} from "react";
                             <img className={"header-img-logo"} src={imgLogo}/>
                         </div>
                         <div className={"header-sections-menu"}>
-                            <a href={syte === "main"? "#models_main": "#vsemodeli"}><div  style={{color: "black"}}>МОДЕЛИ</div></a>
-                            {syte === "main" ?
+                            <a href={activ === "main"|| activ ==="contact" ? "#models_main": "#vsemodeli"}><div  style={{color: "black"}}>МОДЕЛИ</div></a>
+                            {activ === "main" || activ ==="contact" ?
                                 <>
-                                    <a href={"#obzor"}><div style={{color: "black"}}>ОБЗОР</div></a>
-                                    <a href={"#novosti"}> <div style={{color: "black"}}>НОВОСТИ</div></a>
+                                    <a href={"#machine_overview"}><div style={{color: "black"}}  onClick={()=>{this.props.ObzorCar()}}>ОБЗОР</div></a>
+                                    <a href={"#news"}> <div style={{color: "black"}}>НОВОСТИ</div></a>
                                 </>
-                                : syte === "activCar"?
+                                : activ === "activCar"?
                                     <>
-                                        <a href={"#obzor"}><div style={{color: "black"}}>ОСОБЕННОСТИ</div></a>
-                                        <div style={{color: "black"}}>ПРАЙС-ЛИСТ</div>
+                                        <a href={"#peculiarities"}><div style={{color: "black"}}>ОСОБЕННОСТИ</div></a>
+                                        <a href={"#price_list"}><div style={{color: "black"}}>ПРАЙС-ЛИСТ</div></a>
                                     </>
                                     :null}
-                            <div style={{color: "black"}}>КОНТАКТЫ</div>
+                            <a style={{cursor:"pointer"}} ><div style={{color: "#000000"}} onClick={()=>{onclickMain("contact")}}>
+                                КОНТАКТЫ</div></a>
                         </div>
                         <div className={"header-feedback"}>
                         {activ === "main"?

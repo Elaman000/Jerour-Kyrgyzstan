@@ -55,6 +55,7 @@ import FormApplications from "./Head/Form/form";
 import dashingPraisList from "./IMG/dashing/prais list.pdf"
 import x70plusPraisList from "./IMG/X70 plus/prais list.pdf"
 import x90plusPraisList from "./IMG/X90 plus/prais list.pdf"
+import Contact from "./Contacts/contact";
 
 
 const Database = [  {mainImg: dshing,InStock:true, car: {prisList: dashingPraisList, price:35500,cardImg:dashingCard,name:"Dashing",skitka:5,volume:1.5, year:2023,power:165,engineCapacity:1.498,doors:"5 дверный SUV",maxSpeed:185, typeOfDrive:"Передний привод",transmission:"Автомат 8ст-Гидромеханическая",state:"Новый",fuelType:"Бензин",Torque:210,frontSuspension:"Макферсон",rearSuspension:"Независимая многорычажная",curbWeight:1545,tireSize:"215/60 R17",engine:"E4T15B", groundClearance:210,
@@ -171,24 +172,19 @@ class App extends Component{
         return (
             <>
                 {form}
-
-                <Head  activ={this.state.activ} syte={this.state.activ} form={(text)=>{this.setState({form:text})}}  ObzorCar={()=>{this.setState({activ:"activCar", activDatabase: Database[0].car })}} onActiv={(activ)=>{this.setState({activ})}}/>
-                {this.state.activ !== "main"?null:
-                        <>
+                <Head  activ={this.state.activ} onclickMain={(text)=>{this.setState({activ:text})}}  databaseCars={Database} onclockCars={(item, text)=>{this.setState({activDatabase:item,activ:text})}} form={(text)=>{this.setState({form:text})}}  ObzorCar={()=>{this.setState({activ:"activCar", activDatabase: Database[0].car })}} onActiv={(activ)=>{this.setState({activ})}}/>
+                {this.state.activ !== "main"?null: <>
                             <Main/>
                             <Assembly database={Database} activCar={(w,activDatabase,activ)=> {this.setState({activDatabase ,activ})}}/>
                             <Guarantee EventsDatabase={Events}/>
-                         </>
-                }
-                {this.state.activ !== "activCar"?null:
-                    <div>
+                         </>}
+                {this.state.activ !== "activCar"?null: <div>
                         <Activcar allCars={Database} database={this.state.activDatabase}/>
                     </div>}
+                {this.state.activ !== "contact"?null:
+                    <Contact/>}
             </>
         );
     }
     }
-
-
-
 export default App;

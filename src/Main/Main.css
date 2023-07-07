@@ -29,17 +29,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.main-img-logo-center img{
-    width: 45vw;
-    height: auto;
-}
-.main-img-logo-center span{
-    color: rgba(255, 255, 255, 0.8);
-    font-family: 'Jura', sans-serif;
-    font-style: normal;
-    font-size: 3.4vw;
-    font-weight: 700;
-}
+
 .main-info-text-bottom{
     position: absolute;
     bottom: 5%;
@@ -57,7 +47,7 @@
         color: white;
         font-family: 'Jura', sans-serif;
         font-weight: 500;
-        font-size: 3.4vw;
+        font-size: 4vw;
         line-height: 0.4em;
     }
     .main-info-text-bottom .Learn-more-button{
@@ -68,6 +58,17 @@
         color: #CCCCCC;
         padding: 0.2em 0.5em;
         text-transform: uppercase;
+    }
+    .main-img-logo-center img{
+        width: 60vw;
+        height: auto;
+    }
+    .main-img-logo-center span{
+        color: rgba(255, 255, 255, 0.8);
+        font-family: 'Jura', sans-serif;
+        font-style: normal;
+        font-size: 4.5vw;
+        font-weight: 700;
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1200px){
@@ -88,6 +89,17 @@
         padding: 0.2em 0.5em;
         text-transform: uppercase;
     }
+    .main-img-logo-center img{
+        width: 45vw;
+        height: auto;
+    }
+    .main-img-logo-center span{
+        color: rgba(255, 255, 255, 0.8);
+        font-family: 'Jura', sans-serif;
+        font-style: normal;
+        font-size: 3.5vw;
+        font-weight: 700;
+    }
 }
 @media screen and (min-width: 1200px) and (max-width:99999999999px){
 
@@ -106,5 +118,16 @@
         color: #CCCCCC;
         padding: 8px 30px;
         text-transform: uppercase;
+    }
+    .main-img-logo-center img{
+        width: 45vw;
+        height: auto;
+    }
+    .main-img-logo-center span{
+        color: rgba(255, 255, 255, 0.8);
+        font-family: 'Jura', sans-serif;
+        font-style: normal;
+        font-size: 3.4vw;
+        font-weight: 700;
     }
 }
