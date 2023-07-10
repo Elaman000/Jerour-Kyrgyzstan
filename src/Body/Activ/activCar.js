@@ -71,10 +71,6 @@ import x95Card from '../../IMG/Маторики/x95 card.png'
 import Modification from "./Modification/modifig"
 
 
-
-
-
-
 const databaseCar =[
     {name:"Dashing", car:{
             ExternalDesign:"Jetour Dashing 2023 часто сравнивают с Lamborghini Urus, что объясняется похожей внешностью этих машин. Оба кроссовера имеют характерный «хищный» передок, но у «китайца» совсем иная – безрамочная радиаторная решетка, а также элегантная двухэтажная оптика.",
@@ -241,7 +237,7 @@ class Activcar extends Component{
                     <div className={"activ-text-car"}>
                         <h1 className={"name-car-activ"}>{database === null? null:database.name}</h1>
                         <p className={"pot-text-carName"}>Экономичность и эффективность машины оснащен современными технологиями, которые повышают его экономичность и эффективность. Вы сможете сэкономить на топливе и одновременно уменьшить негативное воздействие на окружающую среду.</p>
-                        <div className={"activ-booton-info-jetour"}>
+                        <div className={"activ-booton-info-jetour"} onClick={()=>{this.props.form()}}>
                             тест-драйв  &#8594;
                         </div>
                     </div>
@@ -373,7 +369,7 @@ class Activcar extends Component{
                 </div>
                 <div className={"peculiarities pris-list"} id={"price_list"}>
                     <h1>Прайс-лист и спецификации</h1>
-                        <a href={activCar !== undefined?activCar.prisList:''}><img src={pdfImg}/>
+                        <a href={activCar !== undefined?activCar.prisList:''}><img src={pdfImg} alt="img"/>
                             <span>{activCar !== undefined?activCar.name:''}</span>
                         </a>
                 </div>
@@ -385,7 +381,7 @@ class Activcar extends Component{
                     <div className={"border-card-car"}>
                         {allCars.map((item, index) =>{
                             return(
-                                <div key={index} id={index} className={"card-car-model"}>
+                                <div key={index} id={index} className={"card-car-model"} onClick={()=>{this.props.onclickCar(item.car)}}>
                                     {!item.InStock?
                                         <div className={"inStock"}>
                                             Заказной
@@ -397,8 +393,8 @@ class Activcar extends Component{
                                     <div className={"block-card"}>
                                     </div>
                                     <span>{item.car.year}</span>
-                                    <img className={"img-card"} src={item.car.cardImg}/>
-                                    <img className={"img-card-hover"} src={item.car.img.white}/>
+                                    <img className={"img-card"} alt="img" src={item.car.cardImg}/>
+                                    <img className={"img-card-hover"} alt="img" src={item.car.img.white}/>
                                 </div>
                             )
                         })}
@@ -411,7 +407,7 @@ class Activcar extends Component{
                 </div>
 
                 <div className={"bottom-activ-syte"}>
-                    <img src={logotip}/>
+                    <img src={logotip} alt="img"/>
                 </div>
 
             </>
@@ -422,14 +418,14 @@ class Activcar extends Component{
 
 function Slyder(databaseImg) {
     const tt = databaseImg.databaseImg !== undefined? databaseImg.databaseImg.imgAll : null;
-    const imgs = tt !== null? tt.map((item, items) =>{
-        if (items === 0){
-            return(
+    return tt !== null ? tt.map((item, items) => {
+        if (items === 0) {
+            return (
                 <div key={item.img} className="carousel-item active">
                     <img src={item.img} className="d-block w-100" alt="..."/>
                 </div>
             )
-        }else {
+        } else {
             return (
                 <div key={item.img} className="carousel-item">
                     <img src={item.img} className="d-block w-100" alt="..."/>
@@ -438,8 +434,7 @@ function Slyder(databaseImg) {
         }
 
 
-    }):"";
-    return imgs;
+    }) : "";
 }
 
 

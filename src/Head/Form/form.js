@@ -5,6 +5,10 @@ import React, {Component} from "react";
 
 
  class FormApplications extends Component{
+
+
+
+
      render() {
          return(
              <>
@@ -17,9 +21,10 @@ import React, {Component} from "react";
                              <path
                                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                          </svg>
-                         <h1>Форма заявки</h1>
+                         <center>
+                             <h1>Форма заявки</h1>
+                         </center>
                          <div className="block-inp2">
-                             <h2>Записаться на тест-драйв</h2>
                              <div className={"block-inp-text"}>
                                  <div className="form-floating">
                                      <input type="text" className="form-control" id="floatingInputGrid"
@@ -34,9 +39,10 @@ import React, {Component} from "react";
                                  <div className="form-floating">
                                      <input type="number" className="form-control" id="floatingInputGrid2"
                                             placeholder="+996 554 54 77 66"/>
-                                     <label htmlFor="floatingInputGrid">Телефон номер</label>
+                                     <label htmlFor="floatingInputGrid"  >Телефон номер</label>
                                  </div>
                              </div>
+                             <br/>
                              <div className="form-floating">
                                  <select className="form-select" id="floatingSelectGrid">
                                      <option defaultValue>Хочу записатся на тест-драйв</option>
@@ -46,7 +52,13 @@ import React, {Component} from "react";
                                  </select>
                                  <label htmlFor="floatingSelectGrid">Часто задаваемые вопросы</label>
                              </div>
-                             <button className="btn btn-primary" type="button" onClick={()=>{if(window.confirm('Нажмите "OK", если вы не робот')){alert('Спасибо за доверие!')}else{alert("Простите но мы не можем продолжить опираться!")}}} >Button</button>
+                             <br/>
+                             <button style={{marginRight:"1em"}} className={"btn btn-primary"}>
+                                 <i className="bi bi-telegram "/> Telegram bot
+                             </button>
+                             <button  className="btn btn-primary" type="button" onClick={()=>{if(window.confirm('Нажмите "OK", если вы не робот')){alert('Спасибо за доверие!')}else{alert("Простите но мы не можем продолжить опираться!")}}} >
+                                 Отправить</button>
+
                          </div>
                      </div>
                  </div>

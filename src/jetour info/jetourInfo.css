@@ -1,0 +1,62 @@
+.block-JetourInfo{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding-top: 80px;
+    overflow: hidden;
+}
+.block-JetourInfo .backgroundColor{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.46);
+}
+.block-JetourInfo .content{
+    position: absolute;
+
+}
+.block-JetourInfo video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.block-JetourInfo p {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: inline-block;
+    padding: 1.5em 0;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.block-JetourInfo span {
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    text-shadow: 0 0 50px rgba(255,255,255,.5);
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: aitf 80s linear infinite;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+@keyframes aitf {
+    0% { background-position: 0 50%; }
+    100% { background-position: 100% 50%; }
+}

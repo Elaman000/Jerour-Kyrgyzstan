@@ -21,7 +21,8 @@
     }
     .block-Applications{
         width: 80vw;
-        height: 80vh;
+        height: auto;
+        padding: 15% 5%;
         background-color: white;
         position: absolute;
         top: 50%;
@@ -53,7 +54,9 @@
     }
     .block-Applications{
         width: 60vh;
-        height: 80vh;
+        height: auto;
+        padding: 15% 5%;
+
         background-color: white;
         position: absolute;
         top: 50%;
@@ -84,8 +87,9 @@
         z-index: 100;
     }
     .block-Applications{
-        width: 60vh;
-        height: 80vh;
+        width: 80vh;
+        height: auto;
+        padding: 5% 0;
         background-color: white;
         position: absolute;
         top: 50%;

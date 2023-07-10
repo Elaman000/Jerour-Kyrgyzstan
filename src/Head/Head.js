@@ -55,7 +55,7 @@ import {Component} from "react";
                                                 <li className="nav-item">
                                                     <a className="nav-link active" aria-current="page" onClick={()=>{this.props.onclickMain("main")}}>Главный</a>
                                                 </li>
-                                                <li className="nav-item">
+                                                <li className="nav-item" onClick={()=>{onclickMain("contact")}}>
                                                     <a className="nav-link">Контакты</a>
                                                 </li>
                                                 <li className="nav-item">
@@ -94,18 +94,17 @@ import {Component} from "react";
                         </div>
                         <div className={"header-sections-menu"}>
                             <a href={activ === "main" || activ ==="contact"  ? "#main_models": "#vsemodeli"}><div style={{color: "white"}}>МОДЕЛИ</div></a>
-
-                            {activ === "main" || activ ==="contact" ?
-                                <>
-                                <a href={"#machine_overview"}><div style={{color: "white"}} onClick={()=>{this.props.ObzorCar()}}>ОБЗОР</div></a>
-                                    <a href={"#news"}><div style={{color: "white"}}>НОВОСТИ</div></a>
-                                </>
-                            : activ === "activCar"?
+                            {
+                                activ === "activCar"?
                                     <>
                                         <a href={"#peculiarities"}><div style={{color: "white"}}>ОСОБЕННОСТИ</div></a>
                                         <a href={"#price_list"}><div style={{color: "white"}}>ПРАЙС-ЛИСТ</div></a>
+                                    </>:
+                                    <>
+                                        <a href={"#machine_overview"}><div style={{color: "white"}} onClick={()=>{this.props.ObzorCar()}}>ОБЗОР</div></a>
+                                        <a href={"#news"}><div style={{color: "white"}}>НОВОСТИ</div></a>
                                     </>
-                            :null}
+                            }
 
 
                             <a style={{cursor:"pointer"}} ><div style={{color: "white"}} onClick={()=>{onclickMain("contact")}}>

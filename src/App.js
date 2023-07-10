@@ -3,6 +3,7 @@ import Head from "./Head/Head";
 import Main from "./Main/Main";
 import Assembly from "./Body/Assembly";
 import Activcar from "./Body/Activ/activCar"
+import JetourInfo from "./jetour info/jetourInfo"
 
 
 //Картинки машин
@@ -166,7 +167,6 @@ class App extends Component{
         activDatabase:null,
         form: "",
     };
-
     render() {
         const form = this.state.form ===  "applications"? <FormApplications form={(text)=>{this.setState({form:text})} } />:null;
         return (
@@ -174,15 +174,17 @@ class App extends Component{
                 {form}
                 <Head  activ={this.state.activ} onclickMain={(text)=>{this.setState({activ:text})}}  databaseCars={Database} onclockCars={(item, text)=>{this.setState({activDatabase:item,activ:text})}} form={(text)=>{this.setState({form:text})}}  ObzorCar={()=>{this.setState({activ:"activCar", activDatabase: Database[0].car })}} onActiv={(activ)=>{this.setState({activ})}}/>
                 {this.state.activ !== "main"?null: <>
-                            <Main/>
+                            <Main infoJetour={()=>{this.setState({activ:"jetourInfo"})}} />
                             <Assembly database={Database} activCar={(w,activDatabase,activ)=> {this.setState({activDatabase ,activ})}}/>
                             <Guarantee EventsDatabase={Events}/>
                          </>}
                 {this.state.activ !== "activCar"?null: <div>
-                        <Activcar allCars={Database} database={this.state.activDatabase}/>
+                        <Activcar onclickCar={(item)=>{this.setState({activDatabase:item,activ:"activCar"})}} form={()=>{this.setState({form:"applications"})}} allCars={Database} database={this.state.activDatabase}/>
                     </div>}
                 {this.state.activ !== "contact"?null:
                     <Contact/>}
+                {this.state.activ !== "jetourInfo"?null:
+                <JetourInfo/>}
             </>
         );
     }
